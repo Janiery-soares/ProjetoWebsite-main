@@ -8,9 +8,7 @@ class DadosCliente(models.Model):
     complemento_cliente = models.TextField()
     telefone_cliente = models.CharField(max_length=100)
     email_cliente = models.EmailField()
-    pizza = models.ForeignKey(Pizza, on_delete=models.CASCADE)
-    bebida = models.ForeignKey(Bebida, on_delete=models.CASCADE)
-    pedido = models.ForeignKey(Pedido, on_delete=models.CASCADE)
+   
 
     def __str__(self):
         return self.nome_cliente

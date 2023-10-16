@@ -9,9 +9,9 @@ class Pedido(models.Model):
 
 class compa(models.Model):
     lista_pagamento = [
-        ('Pix','1'),
-        ('C.Débito','2'),
-        ('C.Crédito','3'),
+        ('Pix','Pix'),
+        ('C.Débito','C.Débito'),
+        ('C.Crédito','C.Crédito'),
     ]
     valor_compra = models.DecimalField(max_digits=9, decimal_places=2)
     pagamento_compra = models.CharField(max_length=9, choices=lista_pagamento)
