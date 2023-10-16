@@ -29,8 +29,3 @@ class Bebida(models.Model):
         return self.nome_bebida
     
 
-class Pedido(models.Model):
-    adicionar_pedido = models.BooleanField(null=True, blank=True)
-
-    def __str__(self):
-        return f'{self.adicionar_pedido}'

@@ -1,5 +1,12 @@
 from django.db import models
 
+class Pedido(models.Model):
+    adicionar_pedido = models.BooleanField(null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.adicionar_pedido}'
+    
+
 class compa(models.Model):
     lista_pagamento = [
         ('Pix','1'),
