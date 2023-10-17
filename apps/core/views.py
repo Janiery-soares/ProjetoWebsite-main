@@ -1,26 +1,12 @@
-
-
 from django.shortcuts import render
-from .models import fornecedor
+
+from .models import Fornecedor
+from .models import Produto
 
 
-def home(request):
-    configuracao = fornecedor.objects.all()
-
-    # Esta verificação é apenas para não deixar o site em branco
-    if len(configuracao) > 0:
-        configuracao = configuracao[0]
-    else:
-        configuracao = {
-            "slogan": "Slogan",
-            "nome_empresa": "Nome da Empresa",
-            "telefone": "(00) 00000-0000",
-            "email": "email@amil.com"
-        }
-
-    dados = {
-        "configuracao": configuracao,
-    }
-    return render(request, "home.html", dados)
-
-
+def FornecedorView(request):
+	
+	dados_fornecedor = Fornecedor.objects.all()
+    dados_produtos = Produto.objects.all()
+	
+	return render(request, 'fornecedor.html', {'fornecedor': dados_fornecedor, 'produtos':dados_produtos})
