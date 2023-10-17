@@ -1,6 +1,6 @@
 from django.db import models
 
-class fornecedor(models.Model):
+class Fornecedor(models.Model):
     nome_fornecedor = models.CharField(max_length=100)
     endereço_fornecedor = models.TextField()
     telefone_fornecedor = models.CharField(max_length=100)
@@ -10,7 +10,7 @@ class fornecedor(models.Model):
         return self.nome_fornecedor
 
 
-class produto(models.Model):
+class Produto(models.Model):
     nome_produto = models.CharField(max_length=100)
     quantidade_produto = models.IntegerField()
     descricao_produto = models.TextField
