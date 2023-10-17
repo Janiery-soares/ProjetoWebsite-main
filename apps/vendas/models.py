@@ -1,13 +1,16 @@
 from django.db import models
+from apps.biblioteca.models import *
 
 class Pedido(models.Model):
     adicionar_pedido = models.BooleanField(null=True, blank=True)
+    pizza = models.ForeignKey(Pizza, on_delete=models.CASCADE )
+    bebida = models.ForeignKey(Bebida, on_delete=models.CASCADE)
 
     def __str__(self):
         return f'{self.adicionar_pedido}'
     
 
-class compa(models.Model):
+class Compra(models.Model):
     lista_pagamento = [
         ('Pix','Pix'),
         ('C.Débito','C.Débito'),
@@ -15,6 +18,7 @@ class compa(models.Model):
     ]
     valor_compra = models.DecimalField(max_digits=9, decimal_places=2)
     pagamento_compra = models.CharField(max_length=9, choices=lista_pagamento)
+    pedido = models.ForeignKey(Pedido, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.valor_compra

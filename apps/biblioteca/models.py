@@ -24,6 +24,7 @@ class Bebida(models.Model):
     nome_bebida = models.CharField(max_length=50)
     ml_bebida = models.IntegerField()
     quantidade_bebida = models.IntegerField()
+    imagen_produto = models.ImageField(upload_to="foto_bebida/")
 
     def __str__(self):
         return self.nome_bebida
