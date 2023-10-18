@@ -13,12 +13,12 @@ urlpatterns = [
     # http://127.0.0.1:8000/admin/
     path('admin/', admin.site.urls),
 
-    path('cadastro/', CadastroView, name='pagina_cadastro'),
+    path('cadastro/', CadastroView, include, name='pagina_cadastro'),
 
-    path('produto/', ProdutosView, name='pagina_produto'),
+    path('produto/', ProdutosView, include, name='pagina_produto'),
 
-    path('vendas/', CompraView, name='pagina_vendas'),
+    path('vendas/', CompraView, include, name='pagina_vendas'),
 
-    path('core/', FornecedorView, name='pagina_fornecedor'),
+    path('core/', FornecedorView, include, name='pagina_fornecedor'),
 
 ]

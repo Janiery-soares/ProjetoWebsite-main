@@ -92,12 +92,12 @@
     
       .ravena {
         position:relative; /*faz com que o menu passe por cima dos documentos*/
-        top: -1200px; 
+        top: -750px; 
         left: auto;
         display: block;
         color: white;
         text-align: center;
-        font-size: 20pt;
+        font-size: 15pt;
         
         
 
@@ -105,8 +105,8 @@
       }
       .aurora {
         position:relative; /*faz com que o menu passe por cima dos documentos*/
-        top: -1000px; 
-        left: 300px;
+        top: -800px; 
+        left: 200px;
 
       }
       .JJ {
@@ -123,7 +123,31 @@
         color: black;
         font-size: 15pt;
        
-
+      }
+      .cabecalho {
+        background-color:rgb(0, 0, 0,1);
+        position: relative;
+        
+        background-color: #ffffff; /* <-- cor da inter face do site*/
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        display: block;
+        height: 0px;
+        display: block;  /*trasforma o conteudo em bloco*/
+        width: 550px; /*tamano do conteudo*/
+        float: left; /*fazer o conteudo futuat a esquerda da tela*/
+        border-right: 1px solid #606060;
+        padding-right: 25px ;
+       
+        
+      
+        
+      }
+      .interface {                      /*FORMATACAO DA INTERFACE DO SITE*/
+        width: 1000px;            /* <--largura em pixels*/
+        background-color: #ffffff; /* <-- cor da inter face do site*/
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        padding: 10px ;
+        margin: -20px auto 0px auto;
       }
 
       
@@ -135,29 +159,13 @@
 
     
 </head>
+
+<div id="interface"> 
 <header data-bs-theme="blue">
-  <div class="collapse text-bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4>About</h4>
-          <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4>Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
+  <div class="cabecalho">
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
-        <img src = "c:\Users\janie\OneDrive\Documentos\GitHub\ProjetoWebsite-main\midia\nappospizzafrita23_1697591045572.jpeg" width="250" height="100">
+        <img src = "c:\Users\janie\OneDrive\Documentos\GitHub\ProjetoWebsite-main\midia\LOGO__1_-removebg-preview.png" width="200" height="150">
         <strong> </strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,5 +1,5 @@
 from django.db import models
-from apps.biblioteca.models import *
+from apps.produtos.models import *
 
 class Pedido(models.Model):
     adicionar_pedido = models.BooleanField(null=True, blank=True)
