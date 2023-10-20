@@ -21,5 +21,5 @@ class Compra(models.Model):
     pedido = models.ForeignKey(Pedido, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.valor_compra
+        return f'{self.valor_compra}'
     
