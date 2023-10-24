@@ -1,0 +1,30 @@
+.txt1{
+    font-family:;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.txt2{
+    color: white;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.navbar{
+    padding: 0;
+}
+
+.card-title{
+    font-size:100;
+    color: white;
+
+}
+
+.card{
+    background-color: black;
+}
+
+.card-group{
+    width: 50 px;
+}
