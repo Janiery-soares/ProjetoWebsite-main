@@ -13,6 +13,7 @@ class Pizza(models.Model):
     borda_pizza = models.BooleanField(null=True, blank=True, verbose_name='Com Borda')
     descricao_pizza = models.TextField(verbose_name='Descrição da Pizza')
     quantidade_pizza = models.IntegerField(verbose_name='quantidade')
+    imagem_pizza = models.ImageField(upload_to="foto_pizza/")
 
 
     def __str__(self):
