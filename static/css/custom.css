@@ -1,5 +1,5 @@
 .txt1{
-    font-family:;
+    font: family 100px;;
     color: white;
     font-size: 50px;
     font-weight: 900;
@@ -29,10 +29,6 @@
     width: 50 px;
 }
 
-.estilo{
-    background-color: black;
-}
-
 .jj{
     
    
@@ -40,7 +36,11 @@
     background-color: black;
 
 }
-.Ma {
 
+.body{
+    background-color: black;
+}
 
+.row{
+    
 }
