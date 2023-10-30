@@ -13,11 +13,11 @@ class Pedido(models.Model):
         ('3','C.Crédito'),
     ]
       
-pizza = models.ForeignKey(Pizza, on_delete=models.CASCADE )
-bebida = models.ForeignKey(Bebida, on_delete=models.CASCADE)
-valor_compra = models.DecimalField(max_digits=9, decimal_places=2)
-pagamento_compra = models.CharField(max_length=9, choices=lista_pagamento)
-usuario = models.ForeignKey(User, on_delete=models.CASCADE)
+    pizza = models.ForeignKey(Pizza, on_delete=models.CASCADE )
+    bebida = models.ForeignKey(Bebida, on_delete=models.CASCADE)
+    valor_compra = models.DecimalField(max_digits=9, decimal_places=2)
+    pagamento_compra = models.CharField(max_length=9, choices=lista_pagamento)
+    usuario = models.ForeignKey(User, on_delete=models.CASCADE)
 
     # juntar com model Pedido
 
