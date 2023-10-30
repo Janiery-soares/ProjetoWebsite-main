@@ -14,4 +14,4 @@ class DadosCliente(models.Model):
    
 
     def __str__(self):
-        return self.usuario   
+        return f"{self.usuario}"   
