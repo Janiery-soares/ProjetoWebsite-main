@@ -18,8 +18,7 @@ class Pedido(models.Model):
     valor_compra = models.DecimalField(max_digits=9, decimal_places=2)
     pagamento_compra = models.CharField(max_length=9, choices=lista_pagamento)
     usuario = models.ForeignKey(User, on_delete=models.CASCADE)
-
-    # juntar com model Pedido
+    
 
 def __str__(self):
     return f'{self.valor_compra}'

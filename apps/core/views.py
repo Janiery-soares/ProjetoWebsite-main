@@ -7,4 +7,4 @@ def CoreView(request):
 	
 	dados_clientes = DadosCliente.objects.all()
 	
-	return render(request, 'core.html', {'clientes':dados_clientes,})
+	return render(request, 'cadastro.html', {'clientes':dados_clientes,})

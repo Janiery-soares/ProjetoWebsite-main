@@ -10,5 +10,5 @@ def ProdutosView(request):
 
 
 	
-	return render(request, 'produto.html', {'pizzas':pizza_lista, 'bebidas':bebida_lista})
+	return render(request, 'compra.html', {'pizzas':pizza_lista, 'bebidas':bebida_lista})
 
