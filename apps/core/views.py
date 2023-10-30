@@ -1,11 +1,10 @@
 from django.shortcuts import render
 
-from .models import Fornecedor
-from .models import Produto
+from .models import DadosCliente
 
-def FornecedorView(request):
+
+def CoreView(request):
 	
-	Fornecedor_lista = Fornecedor.objects.all()
-	produto_lista = Produto.objects.all()
-	return render(request, 'fornecedor.html', {'fornecedor':Fornecedor_lista, 'produtos':produto_lista})
-
+	dados_clientes = DadosCliente.objects.all()
+	
+	return render(request, 'core.html', {'clientes':dados_clientes,})
