@@ -5,11 +5,11 @@ from django.db import models
 class Pizza(models.Model):
 
     lista_sabor = [
-        ('Cs','Calabresa'),
-        ('Ml','Mussarela'),
-        ('CS','Carne de Sol'),
-        ('Ps','Portuguesa'),
-        ('Ct','Chocolate'),
+        ('Calabresa','1'),
+        ('Mussarela','2'),
+        ('Carne de Sol','3'),
+        ('Portuguesa','4'),
+        ('Chocolate','5'),
     ]
 
     lista_tamanho = [ 
@@ -20,14 +20,12 @@ class Pizza(models.Model):
         ('B','Brotinho'),
     ]
     
-    sabor_pizza = models.CharField(max_length=8, choices=lista_sabor, verbose_name='Sabor da Pizza')
+    sabor_pizza = models.CharField(max_length=12, choices=lista_sabor, verbose_name='Sabor da Pizza')
     tamamho_pizza = models.CharField(max_length=8, choices=lista_tamanho, verbose_name='Tamanho da Pizza')
     descricao_pizza = models.TextField(verbose_name='Descrição da Pizza')
     quantidade_pizza = models.IntegerField(verbose_name='quantidade')
     imagem_pizza = models.ImageField(upload_to="foto_pizza")
     preco = models.DecimalField(max_digits=9, decimal_places=2)
-    
-
 
     def __str__(self):
         return self.sabor_pizza
