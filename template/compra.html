@@ -210,6 +210,7 @@
     </div>
   </section>
 
+  <!-- Pizzas -->
   <div class="album py-5 bg-body-tertiary">
     {% for c in pizzas %}
     <div class="container">
@@ -228,6 +229,36 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">{{c.sabor_pizza}}</button>
+                </div>
+                <small class="text-body-secondary">R$: {{c.preco}}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Refrigerantes -->
+  <div class="album py-5 bg-body-tertiary">
+    {% for c in bebidas %}
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c" />
+            <image x="0" y="0" width="100%" height="100%" xlink:href="{{ c.imagem_refri.url }}" />
+            </svg>
+            
+            <div class="card-body">
+              <p class="card-text">{{c.ml_bebida}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">{{c.nome_bebida}}</button>
                 </div>
                 <small class="text-body-secondary">R$: {{c.preco}}</small>
               </div>
