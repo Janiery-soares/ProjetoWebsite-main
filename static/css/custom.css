@@ -39,6 +39,49 @@
     background-color: black;
 }
 
-.escola{
-    display: inline-grid !important; .
+.primary{
+    width: 50px;
+    height: 200px;
+    justify-content: space-around !important;
 }
+
+/* Quadros de imagens de produtos */
+.todos{
+    width: 1350px;
+    height: 160px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 10px solid yellow;
+}
+
+/* Nomes de produtos */
+.nome-produto{
+    width: 1350px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fw-normal{
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    color: white;
+}
+
+
+/* <img src="/midia/pizza.png" alt="Pizzas" class="image">
+  
+<img src="/midia/refri.png" alt="refris" class="image">
+
+<img src="/midia/Drinks.png" alt="drinks" class="image"> */
