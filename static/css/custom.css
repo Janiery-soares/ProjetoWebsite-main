@@ -35,10 +35,6 @@
 
 }
 
-.body{
-    background-color: black;
-}
-
 .primary{
     width: 50px;
     height: 200px;
@@ -48,9 +44,9 @@
 /* Quadros de imagens de produtos */
 .todos{
     width: 1350px;
-    height: 160px;
+    height: 150px;
     padding-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 3px;
     background-color: black;
     display: flex;
     justify-content: space-around;
@@ -58,25 +54,31 @@
 }
 
 .image{
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     background-color: black;
-    border: 10px solid yellow;
+    border: 5px solid yellow;
+    border-radius: 50%;
 }
 
 /* Nomes de produtos */
-.nome-produto{
+#nome-produtos{
     width: 1350px;
-    height: 100px;
+    height: 50px;
     display: flex;
     justify-content: space-around;
 }
 
 .fw-normal{
     width: 100px;
-    height: 100px;
+    height: 10px;
     font-size: 30px;
     color: white;
+}
+
+html{
+    
+    background-color: black;
 }
 
 
