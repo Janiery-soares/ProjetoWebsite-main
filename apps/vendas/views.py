@@ -8,6 +8,6 @@ def CompraView(request):
 	
 	lista_pedido = Pedido.objects.all()
 	
-	return render(request, 'home.html', {'pedido':lista_pedido})
+	return render(request, 'compra.html', {'pedido':lista_pedido})
 	
 

@@ -3,8 +3,10 @@ from django.shortcuts import render
 from .models import DadosCliente
 
 
-def CoreView(request):
+def Home(request):
 	
 	dados_clientes = DadosCliente.objects.all()
+	return render(request, 'home.html', {'clientes':dados_clientes})
+
+#def Cadastro():
 	
-	return render(request, 'cadastro.html', {'clientes':dados_clientes,})
