@@ -104,6 +104,11 @@ html{
     background-color: black;
 }
 
+.main{
+    background-color: black;
+    background-image: url(/midia/backgrounds/backdownload.jpeg);
+}
+
 
 /* <img src="/midia/pizza.png" alt="Pizzas" class="image">
   
