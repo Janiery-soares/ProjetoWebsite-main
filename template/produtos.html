@@ -1,7 +1,7 @@
 {% load static %}
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
+  <head><script src="https://getbootstrap.com/docs/5.3/assets/js/color-modes.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -107,7 +107,8 @@
         display: block !important;
       }
       .icone{
-        color:black:.
+        color:black;
+
       }
       
     </style>
@@ -161,11 +162,7 @@
         <div class="col">
           <div class="card shadow-sm">
 
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#55595c" />
-            <image x="0" y="0" width="100%" height="100%" xlink:href="{{ c.imagem_pizza.url }}" />
-            </svg>
+            <img src="{{ c.imagem_pizza.url }}" alt="pizzas" />
 
             <div class="card-body">
               <p class="card-text">{{c.descricao_pizza}}</p>
