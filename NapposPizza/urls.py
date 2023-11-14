@@ -15,7 +15,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', include("apps.core.urls")),
-    path('', include("apps.produtos.urls")), 
+    #path('', include("apps.produtos.urls")), 
 ]
 
 urlpatterns+= static(

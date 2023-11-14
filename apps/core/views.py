@@ -1,12 +1,13 @@
 from django.shortcuts import render
 
-from .models import DadosCliente
+from apps.produtos.models import *
 
 
 def Home(request):
 	
-	dados_clientes = DadosCliente.objects.all()
-	return render(request, 'home.html', {'clientes':dados_clientes})
+	pizzas = Pizza.objects.all()
+	bebidas = Bebida.objects.all()
+	drinks = Drinks.objects.all()
+	return render(request, 'home.html', {'pizzas':pizzas, 'bebidas':bebidas, 'drinks':drinks})
 
-#def Cadastro():
 	

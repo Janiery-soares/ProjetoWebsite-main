@@ -25,7 +25,7 @@ class Pizza(models.Model):
     descricao_pizza = models.TextField(verbose_name='Descrição da Pizza')
     quantidade_pizza = models.IntegerField(verbose_name='quantidade')
     imagem_pizza = models.ImageField(upload_to="./midia/foto_pizza")
-    preco = models.DecimalField(max_digits=9, decimal_places=2)
+    preco_pizza = models.DecimalField(max_digits=9, decimal_places=2)
 
     def __str__(self):
         return self.sabor_pizza
@@ -33,12 +33,22 @@ class Pizza(models.Model):
 
 class Bebida(models.Model):
     nome_bebida = models.CharField(max_length=50)
-    ml_bebida = models.IntegerField()
+    ml_bebida = models.CharField(max_length=50)
     quantidade_bebida = models.IntegerField()
     imagem_refri = models.ImageField(upload_to="./midia/foto_refri")
-    preco = models.DecimalField(max_digits=9, decimal_places=2)
+    preco_bebida = models.DecimalField(max_digits=9, decimal_places=2)
 
     def __str__(self):
         return self.nome_bebida
     
 
+class Drinks(models.Model):
+    nome_drink = models.CharField(max_length=50)
+    ml_drink = models.CharField(max_length=50)
+    quantidade_drink = models.IntegerField()
+    imagem_drink = models.ImageField(upload_to="./midia/foto_drink")
+    preco_drink = models.DecimalField(max_digits=9, decimal_places=2)
+
+    def __str__(self):
+        return self.nome_drink
+    
