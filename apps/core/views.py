@@ -23,5 +23,6 @@ def Login(request):
 				form.add_error(None, 'tente novamente')
 	else:
 		form = LoginForms()
-    return render(request,'login.html', {'form':form})
+
+	return render(request,'login.html', {'form':form})
    
