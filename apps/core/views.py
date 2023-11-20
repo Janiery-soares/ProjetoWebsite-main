@@ -3,13 +3,14 @@ from .forms import LoginForms
 from .models import DadosCliente
 from django.contrib.auth import authenticate, login
 
+
 def Home(request):
 	
 	dados_clientes = DadosCliente.objects.all()
 	return render(request, 'home.html', {'clientes':dados_clientes})
 
 def Login(request):
-    if request.method == 'POST'
+	if request.method == 'POST':
 		form = LoginForms(request.POST)
 		if form.is_valid():
 			nome_usuario = form.cleaned_data['username']
@@ -20,7 +21,7 @@ def Login(request):
 				return redirect('home')
 			else: 
 				form.add_error(None, 'tente novamente')
-    else:
-        form = LoginForms()
+	else:
+		form = LoginForms()
     return render(request,'login.html', {'form':form})
    
